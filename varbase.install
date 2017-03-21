@@ -183,3 +183,18 @@ function _array_splice_assoc(&$input, $offset, $length, $replacement) {
             + $replacement
             + array_slice($input, $offset + $length, NULL, TRUE);
 }
+
+/**
+ * Implements hook_update_N().
+ */
+function varbase_update_7200() {
+  // Disable & uninstall Remember Me module.
+  if( module_exists('remember_me')) {
+    module_disable(array('remember_me'));
+    drupal_uninstall_modules(array('remember_me'));
+  }
+  // Enable Persistent Login module.
+  if( module_exists('persistent_login')) {
+    module_enable(array('persistent_login'));
+  }
+}

@@ -197,6 +197,9 @@ projects[retina_images][patch][2274303] = "http://www.drupal.org/files/issues/fo
 projects[remember_me][version] = 1.0
 projects[remember_me][subdir] = contrib
 
+projects[persistent_login][version] = 1.0
+projects[persistent_login][subdir] = contrib
+
 projects[smart_trim][version] = 1.5
 projects[smart_trim][subdir] = contrib
 projects[smart_trim][patch][2472565] = "http://www.drupal.org/files/issues/print_summery_only_if-2472565-1.patch"
